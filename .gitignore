@@ -1,0 +1,5 @@
+.DS_Store
+*.json
+.scrapy
+*.pyc
+vkks/pdf_files/
