@@ -13,7 +13,8 @@ class JudgeItem(scrapy.Item):
 class PdfsSpider(scrapy.Spider):
     name = "pdfs"
     allowed_domains = ["vkksu.gov.ua"]
-    start_urls = ['http://vkksu.gov.ua/ua/dieklaracii-rodinnich-zwiazkiw-suddi-ta-dobrotchiesnosti-suddi/dieklaracii-suddiw/']
+    start_urls = ['http://vkksu.gov.ua/ua/dieklaracii-rodinnich-zwiazkiw-suddi-ta-dobrotchiesnosti-suddi/dieklaracii-suddiw/',
+                  'http://vkksu.gov.ua/ua/dieklaracii-rodinnich-zwiazkiw-suddi-ta-dobrotchiesnosti-suddi/dieklaracii-podani-w-2017-roci/']
 
 
     def parse_subpage(self, response):
